@@ -1,0 +1,11 @@
+{
+  "srvcId" : "${artifactId}-${version}",
+  "descriptor" : {
+    "exec" : "java -jar ../mod-calendar/target/mod-calendar-fat.jar -Dhttp.port=%p",
+    "env": [
+      { "name" : "db.username", "value" : "mod_calendar_demo_admin" },
+      { "name" : "db.password", "value" : "admin" },
+      { "name" : "db.database", "value" : "mod_calendar_demo" }
+    ]
+  }
+}
